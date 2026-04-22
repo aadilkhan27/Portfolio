@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ["Play Sports","Training platform","play-sports.webp"],
     ["KTPL","Dairy system","kptl-mobile-app.png"],
     ["Enertrak","Live energy analytics","enerket.webp"],
-    ["Great11","Real-time scoring system","jeckpot11.webp"],
+    ["Great11","Real-time scoring system","great11.webp"],
     ["RosterUp","League platform","rosterup.webp"],
     ["Smart-Boss","Building a robust platform to manage construction workers and machinery.","smartboss.webp"]
   ];
