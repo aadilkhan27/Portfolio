@@ -1,0 +1,162 @@
+:root{
+  --bg:#0b0b12;
+  --card:rgba(20,20,30,0.7);
+  --text:#eaeaea;
+  --muted:#9aa0aa;
+  --accent:#ff2d2d;
+  --border:rgba(255,255,255,0.08);
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  background:radial-gradient(circle at top,#16162a,var(--bg));
+  color:var(--text);
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:60px 18px 30px;
+}
+
+.profile{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:2px solid var(--accent);
+  object-fit:cover;
+  box-shadow:0 0 30px rgba(255,45,45,0.25);
+}
+
+.name{font-size:36px;font-weight:900;margin-top:12px;}
+.role{color:var(--muted);margin-top:6px;font-size:14px;max-width:600px;margin:auto;}
+.badge{margin-top:12px;padding:6px 14px;border:1px solid var(--accent);border-radius:20px;font-size:12px;color:var(--accent);display:inline-block;}
+
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:16px;
+}
+
+.nav a{
+  color:var(--text);
+  text-decoration:none;
+  font-size:14px;
+  opacity:0.8;
+}
+
+.nav a:hover{
+  color:var(--accent);
+}
+
+/* SECTION */
+.container{padding:20px 6vw;}
+.section{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:22px;
+  margin-bottom:22px;
+}
+
+.title{
+  font-size:12px;
+  letter-spacing:1px;
+  color:var(--accent);
+  font-weight:800;
+  margin-bottom:12px;
+}
+
+/* PROJECT */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr}
+}
+
+.project{
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:#0f0f18;
+}
+
+.project img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.pbody{padding:14px;}
+.ptitle{font-weight:800;}
+.pdesc{font-size:13px;color:var(--muted);}
+
+/* CONTACT */
+.contact-wrap{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+@media(max-width:900px){
+  .contact-wrap{grid-template-columns:1fr}
+}
+
+.contact-form form{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+  padding:14px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,0.02);
+  color:var(--text);
+}
+
+.custom-select{
+  display:flex;
+  gap:10px;
+}
+
+.custom-select select{flex:0 0 110px;}
+.custom-select input{flex:1;}
+
+.contact-form button{
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:var(--accent);
+  color:white;
+}
+
+/* TOAST */
+.toast{
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  background:#12121a;
+  padding:14px;
+  border-radius:10px;
+  opacity:0;
+  transform:translateY(100px);
+  transition:0.3s;
+}
+
+.toast.show{
+  opacity:1;
+  transform:translateY(0);
+}
