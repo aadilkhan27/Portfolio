@@ -1,8 +1,11 @@
-const form = document.getElementById("contactForm");
-const btn = document.getElementById("submitBtn");
+document.addEventListener("DOMContentLoaded", () => {
 
-if (form) {
-  form.addEventListener("submit", async function(e) {
+  const form = document.getElementById("contactForm");
+  const btn = document.getElementById("submitBtn");
+
+  if (!form) return;
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     btn.innerText = "Sending...";
@@ -18,10 +21,10 @@ if (form) {
       const res = await fetch(form.action, {
         method: "POST",
         body: formData,
-        headers: { 'Accept': 'application/json' }
+        headers: { Accept: "application/json" }
       });
 
-      if (res.status >= 200 && res.status < 300) {
+      if (res.ok) {
         form.reset();
         showToast("success", "Message sent successfully!");
       } else {
@@ -35,12 +38,15 @@ if (form) {
     btn.innerText = "Send Message";
     btn.disabled = false;
   });
-}
+
+});
 
 function showToast(type, message) {
   const toast = document.getElementById("toast");
   const icon = document.getElementById("toastIcon");
   const msg = document.getElementById("toastMsg");
+
+  if (!toast) return;
 
   toast.className = "toast";
 
@@ -53,7 +59,6 @@ function showToast(type, message) {
   }
 
   msg.innerText = message;
-
   toast.classList.add("show");
 
   setTimeout(() => {
