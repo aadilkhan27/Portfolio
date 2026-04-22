@@ -309,6 +309,14 @@ body{
   background:rgba(255,255,255,0.04);
 }
 
+input::placeholder,
+textarea::placeholder{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto;
+  font-size: 13px;
+  color: var(--muted);
+  opacity: 0.8;
+}
+
 /* ================= PHONE ROW (FIXED ALIGNMENT) ================= */
 .phone-row{
   display:flex;
