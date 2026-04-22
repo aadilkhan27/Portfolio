@@ -1,8 +1,14 @@
 const projects = [
   ["Ambrela Money App","Secure payment system","amberla.webp"],
-  ["Rosec Jewels","Ecommerce jewelry platform","rosec.webp"],
+  ["Rosec Jewels","A robust and secure eCommerce platform for every type of jewelry requirement.","rosec.webp"],
   ["Education App","Offline learning platform","ar-education.webp"],
-  ["MooRakshak","Smart dairy system","moorakshak-mobile-app.png"]
+  ["MooRakshak","Smart dairy system","moorakshak-mobile-app.png"],
+  ["Play Sports","Training platform","play-sports.webp"],
+  ["KTPL","Dairy system","kptl-mobile-app.png"],
+  ["Enertrak","Live energy analytics","enerket.webp"],
+  ["Great11","Real-time scoring system","jeckpot11.webp"],
+  ["RosterUp","League platform","rosterup.webp"],
+  ["Smart-Boss","Building a robust platform to manage construction workers and machinery.","smartboss.webp"]
 ];
 
 const grid = document.getElementById("grid");
