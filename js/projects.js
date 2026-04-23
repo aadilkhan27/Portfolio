@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projects = [
     ["Ambrela Money App","All your fintech solutions in a single application","amberla.webp"],
     ["Rosec Jewels","A robust and secure eCommerce platform for every type of jewelry requirement.","rosec.webp"],
-    ["Dhava","Dhava – Your Smart Fitness Companion.","dhava.jpg"],
+    ["Dhava","Dhava helps you track your activities in one place and stay consistent with your fitness goals.","dhava.jpg"],
     ["Timeout","Time Out is an application that allows you to track your workouts and manage your health.","time-out.webp"],
     ["Recommend You","Recommend You is an amazing social media app with lots of cool features.","recommend-u.webp"],
     ["MooRakshak","Protecting cows, empowering farmers and nurturing a planet-positive dairy future","moorakshak-mobile-app.png"],
